@@ -30,16 +30,16 @@ main.Visible = false
 
 side.Name = "side"
 side.Parent = main
-side.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+side.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
 side.BorderSizePixel = 0
-side.Position = UDim2.new(-3.46004963e-05, 0, 0.0838077068, 0)
-side.Size = UDim2.new(0, 78, 0, 346)
+side.Position = UDim2.new(-3.45805711e-05, 0, 0.0785167217, 0)
+side.Size = UDim2.new(0, 78, 0, 348)
 
 home.Name = "home"
 home.Parent = side
 home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 home.BackgroundTransparency = 1.000
-home.Position = UDim2.new(0.000299698266, 0, 0, 0)
+home.Position = UDim2.new(0.000299698266, 0, 0.0402298868, 0)
 home.Size = UDim2.new(0, 77, 0, 47)
 home.Image = "http://www.roblox.com/asset/?id=1772084923"
 home.MouseButton1Down:connect(function()

@@ -1,4 +1,4 @@
---By Haglo
+-- By Haglo
 
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
@@ -10,6 +10,8 @@ local speed = Instance.new("TextButton")
 local superjump = Instance.new("TextButton")
 local label = Instance.new("TextLabel")
 local close = Instance.new("TextButton")
+local invisible = Instance.new("TextButton")
+local godmode = Instance.new("TextButton")
 local openframe = Instance.new("Frame")
 local openbutton = Instance.new("TextButton")
 
@@ -130,6 +132,34 @@ close.TextSize = 35.000
 close.MouseButton1Down:connect(function()
 	openframe.Visible = true
 	main.Visible = false
+end)
+
+invisible.Name = "invisible"
+invisible.Parent = main
+invisible.BackgroundColor3 = Color3.fromRGB(62, 64, 71)
+invisible.BorderSizePixel = 0
+invisible.Position = UDim2.new(0.749013841, 0, 0.116203338, 0)
+invisible.Size = UDim2.new(0, 78, 0, 51)
+invisible.Font = Enum.Font.GothamBlack
+invisible.Text = "Invisible"
+invisible.TextColor3 = Color3.fromRGB(255, 255, 255)
+invisible.TextSize = 13.000
+invisible.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://pastebin.com/raw/MXYxy6DF"),true))()
+end)
+
+godmode.Name = "godmode"
+godmode.Parent = main
+godmode.BackgroundColor3 = Color3.fromRGB(62, 64, 71)
+godmode.BorderSizePixel = 0
+godmode.Position = UDim2.new(0.133629203, 0, 0.296097517, 0)
+godmode.Size = UDim2.new(0, 78, 0, 51)
+godmode.Font = Enum.Font.GothamBlack
+godmode.Text = "Godmode"
+godmode.TextColor3 = Color3.fromRGB(255, 255, 255)
+godmode.TextSize = 13.000
+godmode.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://pastebin.com/raw/4rqXL7jh"),true))()
 end)
 
 openframe.Name = "openframe"

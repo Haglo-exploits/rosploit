@@ -1,4 +1,7 @@
--- By Haglo
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
@@ -11,7 +14,7 @@ local superjump = Instance.new("TextButton")
 local label = Instance.new("TextLabel")
 local close = Instance.new("TextButton")
 local invisible = Instance.new("TextButton")
-local godmode = Instance.new("TextButton")
+local cmdx = Instance.new("TextButton")
 local openframe = Instance.new("Frame")
 local openbutton = Instance.new("TextButton")
 
@@ -105,6 +108,7 @@ superjump.MouseButton1Down:connect(function()
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150
 end)
 
+
 label.Name = "label"
 label.Parent = main
 label.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
@@ -148,19 +152,20 @@ invisible.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(("https://pastebin.com/raw/MXYxy6DF"),true))()
 end)
 
-godmode.Name = "godmode"
-godmode.Parent = main
-godmode.BackgroundColor3 = Color3.fromRGB(62, 64, 71)
-godmode.BorderSizePixel = 0
-godmode.Position = UDim2.new(0.133629203, 0, 0.296097517, 0)
-godmode.Size = UDim2.new(0, 78, 0, 51)
-godmode.Font = Enum.Font.GothamBlack
-godmode.Text = "Godmode"
-godmode.TextColor3 = Color3.fromRGB(255, 255, 255)
-godmode.TextSize = 13.000
-godmode.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(("https://pastebin.com/raw/4rqXL7jh"),true))()
+cmdx.Name = "cmdx"
+cmdx.Parent = main
+cmdx.BackgroundColor3 = Color3.fromRGB(62, 64, 71)
+cmdx.BorderSizePixel = 0
+cmdx.Position = UDim2.new(0.133629203, 0, 0.296097517, 0)
+cmdx.Size = UDim2.new(0, 78, 0, 51)
+cmdx.Font = Enum.Font.GothamBlack
+cmdx.Text = "CMD X"
+cmdx.TextColor3 = Color3.fromRGB(255, 255, 255)
+cmdx.TextSize = 13.000
+cmdx.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 end)
+
 
 openframe.Name = "openframe"
 openframe.Parent = ScreenGui
